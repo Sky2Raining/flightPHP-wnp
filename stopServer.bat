@@ -1,0 +1,9 @@
+@echo off
+echo Stopping nginx...
+taskkill /F /IM nginx.exe > nul
+echo Stopping PHP FastCGI...
+taskkill /F /IM php-cgi.exe > nul
+echo Stopping mysql...
+:: net stop "MySQL_name"
+pause
+exit
